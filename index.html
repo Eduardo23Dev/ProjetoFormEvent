@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crie seu evento</title>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <h1>Crie e compartilhe seu evento.</h1>
+        <p>O primeiro passo, é preencher esse formulário de inscrição.</p>
+      </header>
+      <form action="" method="post">
+        <div class="Content">
+          <p class="Titles">Informações do evento</p>
+          <div class="line"></div>
+          <div class="infControll">
+            <label for="titulo"
+              >Título do evento
+              <span>&lpar;mínimo 8 caracteres&rpar;</span></label
+            >
+            <input
+              type="text"
+              name="titulo"
+              id="titulo"
+              class="inputControll"
+              required
+            />
+            <label for="link"
+              >Link do evento
+              <span>&lpar;comece com https://&rpar;</span></label
+            >
+            <input
+              type="url"
+              name="link"
+              id="link"
+              class="inputControll"
+              required
+            />
+            <label for="contato"
+              >Whatsapp para contato
+              <span>&lpar;somente números&rpar;</span></label
+            >
+            <input
+              type="tel"
+              name="contato"
+              id="contato"
+              class="inputControll"
+              required
+            />
+            <label for="Infs">Informações extras</label>
+            <textarea
+              name="Infs"
+              id="Infs"
+              cols=""
+              rows=""
+              class="areaControll"
+            ></textarea>
+            <label for="categories">Categoria</label>
+            <select
+              style="
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                border-radius: 8px;
+              "
+              name="categories"
+              class="inputControll"
+              id="categories"
+            >
+              <option disabled selected value>
+                <span>Tipo do evento</span>
+              </option>
+              <option value="live">Ao vivo</option>
+              <option value="live">Podcast</option>
+              <option value="live">Mentotia</option>
+            </select>
+          </div>
+          <div class="privControll">
+            <p style="margin-top: 48px" class="Titles">Privacidade</p>
+            <div class="line"></div>
+            <label for="email"
+              >E-mail do administrador
+              <span>&lpar;digite um email válido&rpar;</span></label
+            >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="inputControll"
+              required
+            />
+            <label for="password"
+              >Senha de acesso para os participantes
+              <span>&lpar;mínimo 8 caracteres&rpar;</span></label
+            >
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="inputControll"
+              required
+            />
+            <div class="customcheckBox">
+              <input type="checkbox" id="checkbox" value="choice" />
+              <label for="checkbox"> Evento privado </label>
+            </div>
+          </div>
+          <div class="datePart">
+            <p style="margin-top: 48px" class="Titles">Dia e hora</p>
+            <div class="line"></div>
+            <div class="dateControll">
+              <div class="date">
+                <label for="date">Data</label>
+                <input
+                  style="font-size: 16px"
+                  type="date"
+                  name="date"
+                  id="date"
+                  required
+                />
+              </div>
+              <div class="hourbegin">
+                <label for="begin">Das</label>
+                <input
+                  style="font-size: 16px"
+                  type="time"
+                  name="begin"
+                  id="begin"
+                  required
+                />
+              </div>
+              <div class="hourend">
+                <label for="end">Até</label>
+                <input
+                  style="font-size: 16px"
+                  type="time"
+                  name="end"
+                  id="end"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Savar evento" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
